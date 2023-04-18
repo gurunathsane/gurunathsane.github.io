@@ -166,6 +166,14 @@
     text-align: right;
 }
 
+.timeline-row:nth-child(odd) .timeline-content ul {
+    text-align: left;
+}
+
+.timeline-row:nth-child(odd) .timeline-content p.left-align {
+    text-align: left;
+}
+
 .timeline-row:nth-child(odd) .timeline-content:after {
     right: -39px;
     border-left: 18px solid #1379bb;
