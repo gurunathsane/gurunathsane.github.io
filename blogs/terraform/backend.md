@@ -1,4 +1,4 @@
-# Title: Harnessing the Power of Terraform State Backends: 
+# Harnessing the Power of Terraform State Backends: 
 
 
 ## Introduction
