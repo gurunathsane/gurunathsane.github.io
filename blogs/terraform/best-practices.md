@@ -1,4 +1,4 @@
-## Terraform: essential best practices
+## Terraform best practices
 
 Terraform has gained widespread acceptance as a crucial tool for Infrastructure as Code (IaC) in modern organizations. Whether managing small projects or orchestrating vast infrastructures, Terraform excels in smooth resource management. It leverages the HashiCorp Configuration Language (HCL), a human-readable and straightforward language explicitly designed for IaC. With minimal learning curve, Terraform emerges as a powerful and mature solution.
 
@@ -63,12 +63,11 @@ More ever, Terraform state files contain sensitive information, such as resource
 
 Choose an appropriate backend configuration to store your terraform state files based on your use case. Local backends work well for personal projects, but for collaboration, opt for remote backends like Terraform Cloud or AWS S3, HashiCorp Consul) to prevent accidental exposure.
 
-A backend is a remote storage location where Terraform stores the state file, allowing for collaborative and centralized management of infrastructure state. Using a state backend is highly recommended for production environments and team-based workflows.
-
-Terraform provides wide range of remote backend storage including cloud provider storage and databases, or even git repository. The number of backend options are incresing day to day. 
+Terraform provides wide range of remote backend storage including cloud provider storage and databases, or even git repository. The number of backend options are increasing day to day. 
 
 This [official page](https://developer.hashicorp.com/terraform/language/settings/backends/configuration) provides detailed information about Terraform backends.
 
+[My Blog on Terraform backends](./backend.html) talks more about terraform backends
 ### **6. Lock Versions**
 
 To prevent unexpected behavior due to version mismatches, lock the Terraform version used in your project. It is also recommended to lock your provider and even modules version. 
