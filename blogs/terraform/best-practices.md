@@ -123,9 +123,15 @@ Editing the Terraform state file manually is strongly discouraged and can lead t
 Always use Terraform commands to manage the state file.
 
 ### **14. Use external tools**
-To make sure you are writing terraform code which spin ups resources in correct way. You can use open source tools like [checkov](https://www.checkov.io/). Checkov is static code analysis tool for terraform and cloudformation. It also suggest good practices and security glitches in your terraform code. Nice part is checkov also comes as `vscode plugin`. This makes easy to scan code right from your IDE while writing code. 
+To make sure you are writing terraform code which spin ups resources in correct way. You can use open source tools like [checkov](https://www.checkov.io/). Checkov is static code analysis tool for terraform and cloudformation. It also suggest good practices and security glitches in your terraform code. Nice part is checkov also comes as `vscode plugin`. This makes easy to check code right from your IDE while writing code. 
 
-[snyk](https://snyk.io/), [Terraform Linter](https://github.com/terraform-linters/tflint) are similar tools to scan your terraform code. infra-cost is another tool for static analysis the code.
+[snyk](https://snyk.io/), [Sonarqube](https://sonarcloud.io/explore/projects) and [Terraform Linter](https://github.com/terraform-linters/tflint) are similar tools to scan your terraform code. 
+
+[infra-cost](https://www.infracost.io/) is another tool for which track cost impact of infrastructure changes before launching resources.
+
+[Terraform-docs](https://terraform-docs.io/) is another open source tools which scans your terraform code and comments in it and generate nice documentation. 
+
+We can use similar tool along with Terraform and Ci-CD pipelines to increase productivity, secure and quality code delivery. 
 
 
 ## Conclusion 
